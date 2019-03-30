@@ -23,7 +23,9 @@ module.exports = {
     'no-extra-boolean-cast': [OFF], // allows !![].length sort of stuff
     'no-unused-vars': [ERROR, { argsIgnorePattern: '^_' }], // un used variables are bad, but sometimes you need them as args so prefix them with an underscore
     'no-underscore-dangle': [ERROR], // goes hand-in-hand with above
+    'no-undef': [ERROR], // shouldn't be using random window vars unless we explicitly declare we will
     'no-return-assign': [OFF],
+    'no-unreachable': [ERROR], // unreachable code is bad code
 
     'import/no-named-as-default': [OFF], // we regularly export anonymous functions by default
     'import/prefer-default-export': [OFF], // default exports mess with webpacks tree shaking
